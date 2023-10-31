@@ -311,7 +311,7 @@ body {
     width: 95%;
     height: 400px;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 5%;
     overflow: hidden;
     border-radius: 20px;
     background: linear-gradient(55deg,#20354a 5%,rgb(53,208,170), rgb(251,198,63),#20354a);
@@ -323,7 +323,7 @@ body {
     width: 100%;
     height: 430px;
     margin: 0 auto;
-
+    margin-top: 5%;
     overflow: hidden;
     border-radius: 20px;
     background: linear-gradient(55deg,#20354a 5%,rgb(53,208,170), rgb(251,198,63),#20354a);
@@ -339,7 +339,7 @@ body {
 }
 
 .block_s1{
-    width: 1550px;
+    width: 250px;
     height: 450px;
     object-fit: cover;
     padding-right: 10%;
@@ -407,6 +407,45 @@ body {
   .nextButton1 {
     right: 0px;
   }
+
+@media screen and (max-width: 320px) {
+    .prevButton,
+    .nextButton,
+    .prevButton1,
+    .nextButton1
+    {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 10px;
+        height: 600px;
+        background: linear-gradient(45deg,#20354a 5%,#e23577, #fbc63f,#e23577,#20354a);;
+        /* background-color: transparent; */
+        border: none;
+        font-size: 24px;
+        color: white;
+    }
+
+    .slider1 img {
+        width: 300px;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    .block_s1 {
+        width: 205px;
+
+    }
+
+    .block_s1 p {
+        font-size: 17px;
+    }
+
+    span.headers{
+        font-size: 25px;
+    }
+}
 
 
 @media screen and (min-width: 1400px) {
