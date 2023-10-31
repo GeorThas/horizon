@@ -460,7 +460,7 @@ body {
     }
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 420px) {
 
     .textcols-header{
         position: relative;
