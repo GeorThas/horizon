@@ -417,9 +417,10 @@ body {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        width: 10px;
+        width: 50px;
         height: 600px;
-        background: linear-gradient(45deg,#20354a 5%,#e23577, #fbc63f,#e23577,#20354a);;
+        background: rgba(253, 200, 63, 0);
+        /*background: linear-gradient(45deg,#20354a 5%,#e23577, #fbc63f,#e23577,#20354a);;*/
         /* background-color: transparent; */
         border: none;
         font-size: 24px;
@@ -434,7 +435,7 @@ body {
     }
 
     .block_s1 {
-        width: 205px;
+        width: 215px;
 
     }
 
