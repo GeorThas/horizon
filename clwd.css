@@ -443,12 +443,18 @@ body {
 .nav {
     /*background-color: #10d6be;*/
     background: linear-gradient(55deg,rgb(251,198,63),rgb(53,208,170), rgb(251,198,63));
-    width: 69%;
+    
     /*left: 7%;*/
     margin-left: auto ;
     margin-right: auto;
     border-radius: 15px;
     /*border: 2px solid white;*/
+
+    width: 85%;
+
+
+    left: 7%;
+    right: 7%;
 }
 .nav .nav__list__item {
     border-color: #e5e5e5;
