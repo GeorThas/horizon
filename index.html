@@ -1,177 +1,499 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet"  href="clwd.css">
-</head>
-<body>
+body {
+    background: #182d40;
+    padding-left: 15%;
+    padding-right: 15%;
+    left: 200px;
+    right: 200px
+}
+
+.backBlock {
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    height: 2000px;
+    background: rgb(32, 53, 74);
+    margin-top: -1000px;
+    left: 10%;
+    right: 10%;
+}
+
+.center {
+    position: relative;
+    /* top:50%; */
+    left:50%;
+    margin-right: -50%;
+    transform: translate(-50%,-50%);
+}
+
+.parent {
+    position: relative;
+    width: 1000px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.parent2 {
+    position: relative;
+    width: 80%;
+    height: 450px;
+    flex-wrap: wrap;
+    display: flex;
 
 
+    /*margin-top: 3%;*/
+    /*margin-left: 8%;*/
+    margin-left: auto;
+    margin-right: auto;
+}
 
-<div class="backBlock"></div>
+.block {
+    width: 300px;
+    height: 450px;
+    background: linear-gradient(50deg, #fdc83f 10%, #e03576 90%, #20354a 1%);
+    /*border: 4px solid #0FD8C0FF;
+    border-radius: 20px;*/
 
-<div>
+    margin: auto;
+    box-shadow: -15px 15px rgb(22, 159, 145);
+}
 
-<!--    <div id="horizon1" style="top: 55px;"></div>&ndash;&gt;-->
+.text-in-block {
+    padding: 25px;
+    padding-top: 0;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: rgb(244, 244, 244) 1px 1px;
+    font-family: Roboto, serif;
+    background:  linear-gradient(135deg, rgb(32, 53, 74), rgb(67, 201, 158) 80%);
+    -webkit-background-clip: text; /* Обрезаем фон по тексту */
+    -webkit-text-fill-color: transparent;
+}
 
-    <nav style="position: fixed; z-index: 10" class="nav nav--red">
-        <ul class="nav__list">
-            <li class="nav__list__item"><a href="#">Главная</a></li>
-            <li class="nav__list__item"><a href="#About_Us">О нас</a></li>
-            <li class="nav__list__item"><a href="#Our_Product">Услуги</a></li>
-            <li class="nav__list__item"><a href="#">Контакты</a></li>
-        </ul>
-    </nav>
-</div>
+.block2 {
+    width: 320px;
+    height: 400px;
+    background-color: #e23577;
+    margin: 20px;
+}
 
-<div style="text-align: center;">
-    <img src="images/main_image.png" style="position: relative; width: 100%; margin-top: 10%">
-</div>
+.block3 {
+    width: 300px;
+    height: 400px;
+    background-color: #e23577;
+    margin: auto;
+}
+
+.textcols-header{
+    position: relative;
+    /* background: linear-gradient(-55deg, rgb(117, 200, 191), rgb(104, 159, 210), rgb(221, 0, 78)); */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    font-style: normal;
+    font-family: "Courier New" , serif;
+    font-size: 30px;
+    color: white;
+    border-bottom: 4px solid #20354a;
+
+    padding: 5px;
+    margin: 0 auto;
+
+}
+
+.text_block_2{
+    text-transform: uppercase;
+    padding: 70px;
+    border-bottom: 5px;
+    border: rgb(117, 200, 191);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.text-block-2-style{
+    position: relative;
+    background: linear-gradient(135deg,#20354a 5%,#e23577, #20354a,#e23577,#20354a);
+    border: 3px;
+    border: white;
+    color: white;
+    border-bottom: 5px solid #29457d;
+    border-right: 5px solid #29457d;
+    /*border-top-left-radius: 70px;*/
+    /*border-bottom-right-radius: 70px;*/
+    /*padding: 30px;*/
+    width: 95%;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: 15%;
+
+}
+
+.text-block-3-style{
+    position: absolute;
+    /*background: linear-gradient(135deg,#20354a 5%,#e23577, #20354a,#e23577,#20354a);*/
+    background: #d02f6c;
+    border: 3px;
+    border: white;
+    color: white;
+    border-top: 15px solid #f5c23f;
+    /*border-right: 5px solid #29457d;*/
+    /*border-top-left-radius: 70px;*/
+    /*border-bottom-right-radius: 70px;*/
+    /*padding: 30px;*/
+    width: 100%;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: 5%;
+    left: 0;
+    right: 1%;
+}
+
+.text_block_3{
+    text-transform: uppercase;
+    padding: 70px;
+    border-bottom: 5px;
+    border: rgb(117, 200, 191);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.header_3_style{
+    margin-top: 130px;
+    position: relative
+}
+
+.headers{
+    box-shadow: #182d41 10px 10px;
+    position: relative;
+    margin-left: 10%;
+    font-family: "Courier New", serif;
+    /*font-weight: lighter;*/
+    font-size: 50px;
+    background:  linear-gradient(55deg,rgb(53,208,170), rgb(244, 194, 63));
+    -webkit-background-clip: text; /* Обрезаем фон по тексту */
+    -webkit-text-fill-color: transparent;
+}
 
 
-<div  class="center">
+.sliderContainer {
+    position: relative;
+    width: 95%;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 5%;
+    overflow: hidden;
+    border-radius: 20px;
+    background: linear-gradient(55deg,#20354a, rgb(68, 118, 210), rgb(41, 69, 125),#20354a);
     
+  }
+
+.sliderContainer1 {
+    position: relative;
+    width: 100%;
+    height: 430px;
+    margin: 0 auto;
+    margin-top: 5%;
+    overflow: hidden;
+    border-radius: 20px;
+    background: linear-gradient(55deg,#20354a, rgb(68, 118, 210), rgb(41, 69, 125),#20354a);
+}
+
+.slider1 {
+    width: 300px;
+
+    margin-left: auto ;
+    margin-right: auto;
+    display: flex;
+    transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.block_s1{
+    width: 250px;
+    height: 450px;
+    object-fit: cover;
+    padding-right: 10%;
+    padding-left: 10%;
+    background: linear-gradient(50deg, #20354a, #e03576, #20354a);
+    /*border: 4px solid #0FD8C0FF;
+    border-radius: 20px;*/
+}
+
+.block_s1.textcols-header {
+    position: relative;
+    /* background: linear-gradient(-55deg, rgb(117, 200, 191), rgb(104, 159, 210), rgb(221, 0, 78)); */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    font-style: normal;
+    font-family: "Courier New" , serif;
+    font-size: 30px;
+    color: white;
+    border-bottom: 4px solid #20354a;
 
 
-<!--    <div id="sun">-->
+    margin: 0 auto;
+}
+  
+  .slider {
+    width: 300px;
+    margin-top: 25px;
+    margin-left: auto ;
+    margin-right: auto;
+    display: flex;
+    transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  
+  .slider img {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  
+  .prevButton,
+  .nextButton,
+  .prevButton1,
+  .nextButton1
+  {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 600px;
+    background: linear-gradient(45deg,#20354a 5%,#e23577, #20354a 5%,#e23577,#20354a);;
+    /* background-color: transparent; */
+    border: none;
+    font-size: 24px;
+    color: white;
+  }
+  
+  .prevButton,
+  .prevButton1 {
+    left: 0px;
+  }
+  
+  .nextButton,
+  .nextButton1 {
+    right: 0px;
+  }
+/*===============================================*/
+.nav__list {
+    margin: 0;
+    padding: 0;
+}
+.nav__list a {
+    padding: .75em 1.5em;
+    transition: all .25s ease-in-out;
+}
+.nav__list__item {
+    /*border-radius: 15px;*/
+    /*border-style: solid;*/
+    /*border-width: 0 0 1px;*/
+}
+.nav__list__item,
+.nav__list__item a {
+    display: block;
+}
+ /*Представление для стационарных устройств1111111*/
+
+@media screen and (max-width: 1308px) {
+    .header_3_style {
+        margin-top: 500px;
+    }
+}
+
+@media screen and (min-width: 320px) {
+    .nav__list > .nav__list__item {
+        border-width: 0 1px 0 0;
+    }
+    .nav__list > .nav__list__item,
+    .nav__list > .nav__list__item a {
+        display: inline-block;
+    }
+
+}
+/*/*/
+/** Внешний вид*/
+/**!*/
+.nav {
+    /*background-color: #10d6be;*/
+    background: linear-gradient(55deg,rgb(53, 206, 169), rgb(249, 196, 63), rgb(53, 206, 169));
+
+    /*left: 7%;*/
+    margin-left: auto ;
+    margin-right: auto;
+    border-radius: 15px;
+    /*border: 2px solid white;*/
+
+    width: 65%;
 
 
-<!--        <div id="horizon1" style="top: 55px;"></div>-->
-<!--        <div id="horizon1" style="top: 163px;"></div>-->
-<!--        <div id="horizon1" style="top: 272px;"></div>-->
-<!--        <div id="horizon1" style="top: 378px;"></div>-->
-<!--        <div id="horizon1" style="top: 485px;"></div>-->
+    left: 7%;
+    right: 7%;
+}
+.nav .nav__list__item {
+    /*border-color: #e5e5e5;*/
 
-<!--        <div>-->
-<!--            <h1 class="text_block_1" >-->
-<!--                {CloudHorizon}-->
-<!--            </h1>-->
-<!--        </div>-->
-<!--       <div id = "cloud"></div>-->
-<!--    </div>-->
-    <div id="horizon"></div>
+}
+.nav a {
+    color: #555;
+    text-decoration: none;
+}
+.nav a:hover, .nav a:active, .nav a:focus {
+    border-radius: 15px;
+    background-color: #e5e5e5;
+}
 
-</div>
+@media screen and (max-width: 680px){
 
+    .nav {
+        width: 85%;
+    }
 
-<div  class="text-block-2-style" >
-    <p class="text_block_2">
-        &nbspПриветствую. В этой статье я хочу рассказать о трех способах размещения изображения в качестве фона всей страницы при помощи только HTML + CSS (без использования JS).
+    ul {
+        font-size: 10px;
+    }
+}
 
-        Итак, требования к фоновому &nbspизображению у нас следующие:
-
-        Покрывается 100% ширины и высоты страницы
-        Фон масштабируется при необходимости (background растягивается или сжимается в зависимости от размеров экрана)
-        Сохраняются пропорции картинки (aspect ratio)
-        Изображение центрировано на странице
-        Фон не вызывает скроллов
-        Решение максимально кроссбраузерное
-        Не используются никакие другие технологии кроме CSS
-    </p>
-</div>
-
-<div style="margin-top: 130px" id="About_Us">
-    <span class="headers">Нас ценят за:
-    </span>
-
-<div class="parent">
-    <div class="block">
-        <h3 style="text-align: center; margin-top: 40px; margin-left: -55px"><span class="textcols-header" >&nbspБезопасность</span></h3>
-        <img src="images/umbrella.png" style="width: 170px;height: 150px; margin-left: 19%; margin-top: 10px">
-        <p class="text-in-block">"...Я доверил важные файлы каким-то студентам... <br>Что может пойти не так?!"</p>
-    </div>
-    <div class="block">
-        <h3 style="text-align: center; margin-top: 40px; margin-left: -55px"><span class="textcols-header" >&nbspПрактичность</span></h3>
-        <img src="images/cloud.png" style="width: 210px;height: 130px; margin-left: 12%; margin-top: 10px">
-        <p class="text-in-block" style="padding-top: 15%">"Axахахах, да ладно!"</p>
-    </div>
-    <div class="block">
-        <h3 style="text-align: center; margin-top: 40px; margin-left: -135px"><span class="textcols-header" >&nbspУдобство</span></h3>
-        <img src="images/sun.png" style="width: 180px;height: 150px; margin-left: 17%; margin-top: 10px">
-        <p class="text-in-block" style="padding-top: 5%">"Если Вы действительно так считайте, то у Нас для Вас плохие новости..."</p>
-    </div>
-</div>
-
-    <div class="sliderContainer1">
-        <div class="slider1">
-            <div class="block_s1">
-                <h3 style="text-align: center; margin-top: 40px; margin-left: -1px"><span class="textcols-header" >Безопасность</span></h3>
-                <img src="images/umbrella.png" style="width: 170px;height: 150px; display: block; margin: 0 auto; margin-top: 10px; margin-top: 10px">
-                <p class="text-in-block">"...Я доверил важные файлы каким-то студентам... <br>Что может пойти не так?!"</p>
-            </div>
-            <div class="block_s1">
-                <h3 style="text-align: center; margin-top: 40px; margin-left: -1px"><span class="textcols-header" >Практичность</span></h3>
-                <img src="images/cloud.png" style="width: 210px;height: 130px;display: block; margin: 0 auto; margin-top: 10px">
-                <p class="text-in-block" style="padding-top: 15%">"Axахахах, да ладно!"</p>
-            </div>
-            <div class="block_s1">
-                <h3 style="text-align: center; margin-top: 40px; margin-left: -1px"><span class="textcols-header" >Удобство</span></h3>
-                <img src="images/sun.png" style="width: 180px;height: 150px; display: block; margin: 0 auto; margin-top: 10px; margin-top: 10px">
-                <p class="text-in-block" style="padding-top: 5%">"Если Вы действительно так считайте, то у Нас для Вас плохие новости..."</p>
-            </div>
-        </div>
-        <button class="prevButton1" aria-label="Посмотреть предыдущий слайд">&lt;</button>
-        <button class="nextButton1" aria-label="Посмотреть следующий слайд">&gt;</button>
-    </div>
-
-</div>
+@media screen and (max-width: 320px) {
 
 
-<div   class="text-block-2-style" >
-    <p class="text_block_2">
-        &nbspПриветствую. В этой статье я хочу рассказать о трех способах размещения изображения в качестве фона всей страницы при помощи только HTML + CSS (без использования JS).
+    .slider1 img {
+        width: 300px;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 20px;
+    }
 
-        Итак, требования к фоновому &nbspизображению у нас следующие:
+    .block_s1 {
+        width: 215px;
 
-        Покрывается 100% ширины и высоты страницы
-        Фон масштабируется при необходимости (background растягивается или сжимается в зависимости от размеров экрана)
-    </p>
-</div>
+    }
 
+    .block_s1 p {
+        font-size: 17px;
+    }
 
-<div style="margin-top: 130px" id="Our_Product">
-    <span class="headers">Мы предлагаем:</span>
-</div>
-
-<div class="sliderContainer">
-    <div class="slider">
-        <img src="images/arch.jpeg" alt="">
-        <img src="images/footman.jpeg" alt="">
-        <img src="images/lich.jpeg" alt="">
-    </div>
-    <button class="prevButton" aria-label="Посмотреть предыдущий слайд">&lt;</button>
-    <button class="nextButton" aria-label="Посмотреть следующий слайд">&gt;</button>
-</div>
-
-<!-- <form onsubmit="return check(this)">
-    <button onclick="onClickButton(this)"> Click </button>
-    <input type="text" name="name" placeholder="Имя" id="name">
-    <input type="submit" name="submit" value="Done">
-</form> -->
+    span.headers{
+        font-size: 25px;
+    }
+}
 
 
-<div style="margin-top: 130px">
-    <span class="headers">
-        Разработчики:
-    </span>
+@media screen and (min-width: 1400px) {
+    div.sliderContainer1 {
+        display: none;
+    }
+}
 
-<!--    <div class="parent2">-->
-<!--        <div class="block2">-->
-<!--            <h3 style="text-align: center; margin-top: 40px; margin-left: -55px"><span class="textcols-header" >&nbspimg</span></h3>-->
-<!--            <img src="images/umbrella.png" style="width: 170px;height: 150px; margin-left: 19%; margin-top: 10px">-->
-<!--            <p class="text-in-block"></p>-->
-<!--        </div>-->
-<!--        <div class="block2">-->
-<!--            <h3 style="text-align: center; margin-top: 40px; margin-left: -55px"><span class="textcols-header" >&nbspimg</span></h3>-->
-<!--            <img src="images/cloud.png" style="width: 210px;height: 130px; margin-left: 12%; margin-top: 10px">-->
-<!--            <p class="text-in-block" style="padding-top: 15%"></p>-->
-<!--        </div>-->
-<!--    </div>-->
-</div>
+@media screen and (max-width: 1400px) {
+    div.parent {
+        display: none;
+    }
+}
 
-<script src="main.js"></script>
+@media screen and (max-width: 580px) {
 
-</body>
-</html>
+    .prevButton,
+    .nextButton,
+    .prevButton1,
+    .nextButton1
+    {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 50px;
+        height: 600px;
+        background: rgba(253, 200, 63, 0);
+        /*background: linear-gradient(45deg,#20354a 5%,#e23577, #fbc63f,#e23577,#20354a);;*/
+        /* background-color: transparent; */
+        border: none;
+        font-size: 24px;
+        color: white;
+    }
+
+    .textcols-header{
+        position: relative;
+        /* background: linear-gradient(-55deg, rgb(117, 200, 191), rgb(104, 159, 210), rgb(221, 0, 78)); */
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-align: center;
+        font-style: normal;
+        font-family: "Courier New" , serif;
+        font-size: 25px;
+        color: white;
+        border-bottom: 4px solid #20354a;
+
+        padding: 5px;
+        margin: 0 auto;
+
+    }
+
+    body {
+        padding-left: 5%;
+        padding-right: 5%;
+        left: 5px;
+        right: 7px
+    }
+
+    .headers {
+
+        font-size: 30px;
+    }
+
+    #sun {
+        margin-top: 400px;
+    }
+
+    #horizon1{
+
+        background: #20354a;
+        width: 600px;
+        height: 10px;
+        position: absolute;
+
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+    }
+
+    .backBlock {
+       position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        width: 97%;
+        height: 6000px;
+        background: rgb(32, 53, 75);
+        margin-top: -1000px;
+        left: 1%;
+        right: 1%;
+    }
+
+    .text_block_2 {
+        font-size: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding(10px, 10px, 30px, 30px);
+    }
+
+    .text-block-2-style {
+        width: 100%;
+        margin-left: auto;
+        margin-right:auto;
+        margin-top: 20%;
+        border-radius: 10px;
+    }
+
+
+
+
+
