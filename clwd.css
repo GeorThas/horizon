@@ -185,7 +185,7 @@ body {
 .sliderContainer {
     position: relative;
     width: 95%;
-    height: 400px;
+    height: 410px;
     margin: 0 auto;
     margin-top: 5%;
     overflow: hidden;
@@ -252,9 +252,23 @@ body {
   
   .slider img {
     width: 300px;
-    height: 350px;
+    height: 310px;
     object-fit: cover;
     border-radius: 20px;
+  }
+
+  .button_2 {
+      width: 300px;
+      height: 45px;
+      margin-top: 15px;
+      border-radius: 30px;
+      object-fit: cover;
+      background:  linear-gradient(55deg,rgb(53,208,170), rgb(244, 194, 63));
+      -webkit-background-clip: text; /* Обрезаем фон по тексту */
+      -webkit-text-fill-color: transparent;
+      font-family: "Courier New", serif;
+      font-weight: bold;
+      font-size: 25px;
   }
   
   .prevButton,
