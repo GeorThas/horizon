@@ -116,7 +116,10 @@ body {
     text-align: center;
 }
 
+
+
 .text-block-2-style{
+
     position: relative;
     background: linear-gradient(135deg,#20354a 5%,#e23577, #20354a,#e23577,#20354a);
     border: 3px;
@@ -357,7 +360,7 @@ body {
 
 }
 .nav a {
-    color: #555;
+    color: #293255;
     text-decoration: none;
 }
 .nav a:hover, .nav a:active, .nav a:focus {
@@ -491,6 +494,7 @@ body {
     }
 
     .text_block_2 {
+
         font-size: 15px;
         padding-left: 10px;
         padding-right: 10px;
